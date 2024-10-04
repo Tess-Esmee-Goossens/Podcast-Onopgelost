@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/algemene.css">
+        <title>Podcast</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="./img/logo.png" alt="Podcast logo - Onopgelost verhalen die blijven vragen">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active_page" href="./afleveringen.html">Afleveringen</a></li>
+                    <li><a href="./over_ons.html">Over ons</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <H1>Kijk onze afleveringen nu op Spotify YouTube en online</H1>
+            <section class="afleveringen">
+                <h2>Recente afleveringen</h2>
+                <!-- __Carousel bron__
+                    https://freefrontend.com/css-carousels/  -> site waar gevonden
+                    https://codepen.io/onion2k/pen/xxZYBVj -> code demo 
+                -->
+                <div id="carousel-1">
+                    <img class="item active" src="./img/aflevering_cassandra-van-schaik.jpg" alt="Aflevering 1 - Cassandra van Schaik" data-index="1">
+                    <img class="item" src="./img/aflevering_hannie-bakker.jpg" alt="Aflevering 2 - Hannie Bakker" data-index="2">
+                    <img class="item" src="./img/aflevering_marcel-carton.jpg" alt="Aflevering 3 - Marcel Carton" data-index="3">
+                    <img class="item" src="./img/aflevering_mike-duif.jpg" alt="Aflevering 4 - Mike Duif" data-index="4">
+                    <img class="item" src="./img/aflevering_simone-riedel.jpg" alt="Aflevering 5 - Simone Riedel" data-index="5">
+                    <img class="item" src="./img/aflevering_tonny-ter-horst.jpg" alt="Aflevering 6 - Tonny ter Horst" data-index="6">
+
+                    <button id="prevButton-1" class="nav-arrow left-arrow">←</button>
+                    <button id="nextButton-1" class="nav-arrow right-arrow">→</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>Top 5 afleveringen</h2>
+                <ol>
+                    <li><a href="">Cassandra van Schaik</a></li>
+                    <li><a href="">Marcel Carton</a></li>
+                    <li><a href="">Tonny ter Horst</a></li>
+                    <li><a href="">Mike Duif</a></li>
+                    <li><a href="">Hannie Bakker</a></li>
+                </ol>
+            </section>
+
+            <section class="afleveringen">
+                <h2>Vermist persoon</h2>
+                <div id="carousel-2">
+                    <img class="item active" src="./img/aflevering_cassandra-van-schaik.jpg" alt="Aflevering 1 - Cassandra van Schaik" data-index="1">
+                    <img class="item" src="./img/aflevering_simone-riedel.jpg" alt="Aflevering 5 - Simone Riedel" data-index="2">
+                    <img class="item" src="./img/aflevering_tonny-ter-horst.jpg" alt="Aflevering 6 - Tonny ter Horst" data-index="3">
+                    <img class="item" src="./img/aflevering_hannie-bakker.jpg" alt="Aflevering 2 - Hannie Bakker" data-index="4">
+                    <img class="item" src="./img/aflevering_marcel-carton.jpg" alt="Aflevering 3 - Marcel Carton" data-index="5">
+                    <img class="item" src="./img/aflevering_mike-duif.jpg" alt="Aflevering 4 - Mike Duif" data-index="6">
+
+                    <button id="prevButton-2" class="nav-arrow left-arrow">←</button>
+                    <button id="nextButton-2" class="nav-arrow right-arrow">→</button>
+                </div>
+            </section>
+
+            <section class="afleveringen">
+                <h2>Moord</h2>
+                <div id="carousel-3">
+                    <img class="item active" src="./img/aflevering_cassandra-van-schaik.jpg" alt="Aflevering 1 - Cassandra van Schaik" data-index="1">
+                    <img class="item" src="./img/aflevering_mike-duif.jpg" alt="Aflevering 4 - Mike Duif" data-index="2">
+                    <img class="item" src="./img/aflevering_simone-riedel.jpg" alt="Aflevering 5 - Simone Riedel" data-index="3">
+                    <img class="item" src="./img/aflevering_tonny-ter-horst.jpg" alt="Aflevering 6 - Tonny ter Horst" data-index="4">
+                    <img class="item" src="./img/aflevering_hannie-bakker.jpg" alt="Aflevering 2 - Hannie Bakker" data-index="5">
+                    <img class="item" src="./img/aflevering_marcel-carton.jpg" alt="Aflevering 3 - Marcel Carton" data-index="6">
+
+                    <button id="prevButton-3" class="nav-arrow left-arrow">←</button>
+                    <button id="nextButton-3" class="nav-arrow right-arrow">→</button>
+                </div>
+            </section>
+
+            <section class="afleveringen">
+                <h2>Ontvoering</h2>
+                <div id="carousel-4">
+                    <img class="item active" src="./img/aflevering_cassandra-van-schaik.jpg" alt="Aflevering 1 - Cassandra van Schaik" data-index="1">
+                    <img class="item" src="./img/aflevering_hannie-bakker.jpg" alt="Aflevering 2 - Hannie Bakker" data-index="2">
+                    <img class="item" src="./img/aflevering_marcel-carton.jpg" alt="Aflevering 3 - Marcel Carton" data-index="3">
+                    <img class="item" src="./img/aflevering_mike-duif.jpg" alt="Aflevering 4 - Mike Duif" data-index="4">
+                    <img class="item" src="./img/aflevering_simone-riedel.jpg" alt="Aflevering 5 - Simone Riedel" data-index="5">
+                    <img class="item" src="./img/aflevering_tonny-ter-horst.jpg" alt="Aflevering 6 - Tonny ter Horst" data-index="6">
+
+                    <button id="prevButton-4" class="nav-arrow left-arrow">←</button>
+                    <button id="nextButton-4" class="nav-arrow right-arrow">→</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container-footer-info">
+                <section>
+                    <h2>Contact</h2>
+                    <p><b>Email:</b> Onopgelost@de.podcast.nl</p>
+                    <p>Tel:<b></b> +31 612345600</p>
+                </section>
+
+                <section>
+                    <h2>Socials</h2>
+                    <p><b>Twitter (X):</b> @onopgelost</p>
+                    <p><b>Instagram:</b> @onopgelost</p>
+                    <p><b>Tiktok:</b> @onopgelost</p>
+                </section>
+            </div>
+            <p>&copy; 2024 Onopgelost. Alle rechten voorbehouden. | Privacybeleid | Gebruiksvoorwaarden | <a href="./bronnen.html">Bronnen</a></p>
+        </footer>
+        <script src="./js/carousel.js"></script>
+    </body>
+</html>

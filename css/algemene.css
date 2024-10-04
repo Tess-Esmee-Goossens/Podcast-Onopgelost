@@ -1,0 +1,359 @@
+/* General Styling */
+body, p, h1, h2, h3, a {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Book Antiqua', 'Times New Roman', sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+main, section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2, h3, p {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.1em;
+  margin: 4em 0 1em;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 3em 0 1em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.8em;
+  width: 50%;
+}
+
+a, .button {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+a {
+  font-size: 1.2em;
+  padding: 0.3em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+.bronnen_lijst{
+  text-align: left !important;
+  justify-content: center;
+  width: auto;
+}
+
+/* Button Styling */
+.button {
+  color: #141414 !important;
+  background-color: #ffffff;
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-top: 1em;
+  padding: 1em;
+  display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #792020;
+  color: #ffffff !important;
+  transform: scale(1.2);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #ffffff;
+}
+
+header img {
+  height: 3em;
+}
+
+nav {
+  width: 50vw;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2em;
+  list-style: none;
+}
+
+nav a {
+  color: #141414;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.3em;
+}
+
+nav a:hover, nav a:focus {
+  color: #ffffff !important;
+  box-shadow: inset 18.75em 0 0 0 #141414;
+  transform: scale(1.3);
+}
+
+nav a:visited {
+  color: #141414;
+}
+
+nav a.active_page {
+  color: #141414;
+  text-decoration: underline;
+}
+
+ @media (max-width: 1200px) { /* https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
+  /* logo and nav onder elkaar */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav {
+    width: 100%; 
+    margin-top: 1em;
+  }
+
+  nav a {
+    font-size: 1.5em;
+  }
+}
+
+/* Carousel */
+.afleveringen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.afleveringen div {
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+img.item {
+  width: 30%;
+  height: 250px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  object-fit: cover;
+}
+
+/* Navigation Button Styling */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.2);
+  color: #141414;
+  background-color: #ffffff;
+}
+
+.left-arrow {
+  left: 5%;
+}
+
+.right-arrow {
+  right: 5%;
+}
+
+/* Top 5 Episodes */
+ol {
+  padding: 0;
+}
+
+ol li {
+  list-style-type: none;
+  margin-bottom: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+
+ol a {
+  color: #141414 !important;
+  background-color: #ffffff;
+  font-size: 1.75em;
+  font-weight: 550;
+  padding: 0.5em;
+  width: 79%;
+}
+
+ol li:hover a,
+ol li a:focus {
+  transform: scale(1.1);
+  background-color: #792020;
+  color: #ffffff !important;
+}
+
+/* Footer */
+footer {
+  background-image: url(../Img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0.6em solid #ffffff;
+  margin-top: 5em;
+  width: 100%;
+}
+
+.container-footer-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 0em;
+}
+
+footer a {
+  font-size: 1em;
+}
+
+footer p {
+  font-size: 1.2em;
+  width: 70%;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+/* Ons Team */
+.medewerker_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.medewerker_container {
+  flex: 1 1 300px;
+  margin: 1em;
+  position: relative;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.medewerker_wrapper section img {
+  width: 96%;
+  height: auto;
+  border: #ffffff solid 0.4em;
+}
+
+/* Overlay Styles */
+.medewerker_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.medewerker_overlay h3, .medewerker_overlay p {
+  color: #141414;
+  margin: 0;
+  font-size: 1.3em;
+  width: 80% !important;
+}
+
+.medewerker_container:hover .medewerker_overlay,
+.medewerker_container:focus-within .medewerker_overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Home */
+.fitst-view-point {
+  background-image: url(../Img/bg_index_Main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0.6em solid #ffffff;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.fitst-view-point h1 {
+  width: 80%;
+  font-size: 4em;
+}
+
+.fitst-view-point p {
+  font-size: 2em;
+}
+
+/* Nieuws Brief */
+.nieuws-brief-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2em;
+}
+
+.nieuws-brief-container div {
+  flex: 1;
+}
+
+.nieuws-brief-container img {
+  max-width: 40%;
+  height: auto;
+  border: #ffffff solid 0.3em;
+}
