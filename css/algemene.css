@@ -317,7 +317,7 @@ footer h2 {
 
 /* Home */
 .fitst-view-point {
-  background-image: url(../img/bg_index_Main.jpg);
+  background-image: url(./../img/bg_index_Main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 0.6em solid #ffffff;
