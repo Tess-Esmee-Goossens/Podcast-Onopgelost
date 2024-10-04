@@ -234,7 +234,7 @@ ol li a:focus {
 
 /* Footer */
 footer {
-  background-image: url(../Img/footer.jpg);
+  background-image: url(../img/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 0.6em solid #ffffff;
@@ -317,7 +317,7 @@ footer h2 {
 
 /* Home */
 .fitst-view-point {
-  background-image: url(../Img/bg_index_Main.jpg);
+  background-image: url(../img/bg_index_Main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 0.6em solid #ffffff;
